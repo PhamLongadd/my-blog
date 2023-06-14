@@ -1,0 +1,58 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 436px;
+    background-color: #000;
+}
+
+.title {
+    max-width: 500px;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    color: #FFFFFF
+}
+
+.submitEmail {
+    display: flex;
+    gap: 24px;
+}
+
+.submitEmail input {
+    width: 300px;
+    height: 48px;
+    padding: 14px 16px;
+    background-color: #FFFFFF;
+    border-radius: 6px;
+    font-weight: 400;
+    font-size: 30px;
+    border: none;
+}
+
+.submitEmail input:focus {
+    outline: none;
+}
+
+.submitEmail button {
+    width: 157px;
+    background-color: #FFFFFF;
+    border-radius: 6px;
+    border: none;
+    font-weight: 500;
+    font-size: 18px;
+    color: #000000;
+}
+
+.submitEmail button:hover {
+    cursor: pointer;
+}
+
+.spam {
+    color: #8F93A3;
+    font-weight: 400;
+    font-size: 14px;
+}
