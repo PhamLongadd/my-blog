@@ -3,7 +3,6 @@ import "../style/globals.css";
 
 export default function MyApp({ Component, pageProps }) {
   const Layout = Component.Layout || DefaultLayout;
-  console.log(Layout);
 
   return (
     <Layout>
