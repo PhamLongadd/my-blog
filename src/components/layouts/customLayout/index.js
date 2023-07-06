@@ -4,7 +4,7 @@ import Submit from "../../submit";
 
 export default function CustomLayout({ children }) {
   return (
-    <div className="content">
+    <div>
       <Header />
       {children}
       <Submit />

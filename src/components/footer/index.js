@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <div className={styles.wrapper}>
-     <div className={styles.logo}>
+      <div className={styles.logo}>
         <Link href="/">MY BLOG</Link>
       </div>
       <div className={styles.right}>
@@ -13,7 +13,7 @@ export default function Footer() {
           <Link href="/">Entrepreneurship</Link>
           <Link href="/">Creator</Link>
           <Link href="/">Tech</Link>
-          <Link href="/">All</Link>
+          <Link href="/allBlogs">All</Link>
         </div>
         <div className={styles.information}>
           <span>PAGES</span>

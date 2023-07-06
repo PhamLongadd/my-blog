@@ -91,10 +91,11 @@
 
 .recentPost ul{
     display: flex;
+    gap: 75px;
     justify-content: space-between;
 }
 
-.listPost{
+.listPost .link{
     display: flex;
     flex-direction: column;
     width: 317px;
@@ -103,7 +104,7 @@
     border-radius: 10px;
 }
 
-.recentPost img{
+.recentPost  img{
     height: 257px;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
@@ -113,6 +114,10 @@
     font-weight: 400;
     font-size: 32px;
     padding: 16px;
+}
+
+.listPost .date{
+    margin-left: 16px;
 }
 
 

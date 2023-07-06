@@ -1,0 +1,123 @@
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.titlePost{
+    max-width: 1500px;
+    font-weight: 500;
+    font-size: 100px;
+    margin-top: 78px;
+    margin-bottom: 50px;
+}
+
+.imgPost{
+    width: 1500px;
+    height: 662px;
+    border-radius: 10px;
+    margin-bottom: 55px;
+}
+
+.wrapperContent{
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.timePost{
+    display: flex;
+    justify-content: space-between;
+    color: #72747E;
+    border-top: 1px solid #72747E;
+    border-bottom: 1px solid #72747E;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.author{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.author .avatar{
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+}
+
+.author span{
+    font-weight: 400;
+    font-size: 20px;
+    color: #72747E;
+}
+
+.desciption{
+    font-weight: 500;
+    font-size: 90px;
+}
+
+.content{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+
+}
+
+.otherArticles .type{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 26px;
+}
+
+.otherArticles .typeOtherArticles{
+    font-weight: 400;
+    font-size: 32px;
+    color: #73778C;
+}
+
+.otherArticles .seeAll{
+    font-weight: 500;
+    font-size: 18px;
+    color: #000000;
+    cursor: pointer;
+}
+
+.otherArticles{
+    margin-top: 142px;
+    margin-bottom: 142px;
+}
+
+.otherArticles ul{
+    display: flex;
+    gap: 75px;
+    justify-content: space-between;
+}
+
+.otherArticles .listPost .link{
+    display: flex;
+    flex-direction: column;
+    width: 317px;
+    height: 485px;
+    border: 1px solid #C7C9D1;
+    border-radius: 10px;
+}
+
+.otherArticles .listPost  img{
+    height: 257px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.otherArticles .listPost .title{
+    font-weight: 400;
+    font-size: 32px;
+    padding: 16px;
+}
+
+.otherArticles .listPost .date{
+    margin-left: 16px;
+}
