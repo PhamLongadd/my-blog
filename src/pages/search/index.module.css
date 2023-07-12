@@ -1,0 +1,83 @@
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-left: 140px;
+    margin-right: 140px;
+}
+
+.type{
+    margin-top: 50px;
+    font-weight: 400;
+    font-size: 100px;
+}
+
+.search {
+    display: flex;
+    gap: 10px;
+    height: 32px;
+    background-color: #fff;
+    border-radius: 92px;
+    border: 1px solid #C7C9D1;
+}
+
+.search input{
+    height: 100%;
+    width: 100%;
+    margin-right: 10px;
+    color: #000;
+    font-size: 18px;
+    background-color: transparent;
+    border: none;
+}
+
+.search input:focus-visible{
+    outline: none;
+}
+
+.searchBtn{
+    font-size: 16px;
+    margin-left: 16px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.postGrid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 100px;
+    padding: 0;
+    justify-content: space-between;
+    margin-bottom: 135px;
+  }
+  
+  .listPost{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 317px;
+      height: 485px;
+      border: 1px solid #C7C9D1;
+      border-radius: 10px;
+  }
+  
+  .listPost img{
+      height: 257px;
+      border-top-right-radius: 10px;
+      border-top-left-radius: 10px;
+  }
+  
+  .listPost .title{
+      font-weight: 400;
+      font-size: 32px;
+      padding-left: 16px;
+      padding-right: 16px;
+  }
+  
+  .listPost .date{
+      margin-left: 16px;
+    margin-bottom: 10px;
+
+  }
+

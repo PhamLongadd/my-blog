@@ -1,7 +1,7 @@
-import DefaultLayout from "@/components/layouts/defaultLayout";
-import styles from "./index.module.css";
 import Link from "next/link";
 
+import DefaultLayout from "@/components/layouts/defaultLayout";
+import styles from "./index.module.css";
 import { getPosts } from "@/utils/mdx-utils";
 
 function AllBlogs({ posts }) {
@@ -16,22 +16,14 @@ function AllBlogs({ posts }) {
               href={`/posts/[slug]`}
               className={styles.link}
             >
-              <li className={styles.listPost}>
-                <img
-                  src="https://anhdep123.com/wp-content/uploads/2021/01/hinh-nen-thien-nhien-4k.jpg"
-                  alt="ss"
-                />
+              <li key={post.filePath} className={styles.listPost}>
+                <img src={post.data.image} alt="ss" />
                 <span className={styles.title}>{post.data.title}</span>
                 <span className={styles.date}>{post.data.date}</span>
               </li>
             </Link>
           ))}
         </ul>
-      </div>
-      <div className={styles.btn}>
-        <button className={styles.button}>Back</button>
-        <span>1/4</span>
-        <button className={styles.button}>Next</button>
       </div>
     </div>
   );

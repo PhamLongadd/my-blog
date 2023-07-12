@@ -3,7 +3,7 @@ import styles from "./index.module.css";
 import Image from "next/image";
 import Link from "next/link";
 
-import avatar from "../../../public/Images/avatar.jpg";
+import avatar from "../../../public/images/avatar.jpg";
 import { getPosts, postFilePaths, getPostBySlug } from "../../utils/mdx-utils";
 import { MDXRemote } from "next-mdx-remote";
 
@@ -11,24 +11,18 @@ export default function PostPage({ posts, frontMatter, source }) {
   return (
     <div className={styles.wrapper}>
       <span className={styles.titlePost}>{frontMatter.title}</span>
-      <img
-        src="https://anhdep123.com/wp-content/uploads/2021/01/hinh-nen-thien-nhien-4k.jpg"
-        alt="ss"
-        className={styles.imgPost}
-      />
+      <img src={frontMatter.image} alt="ss" className={styles.imgPost} />
       <div className={styles.wrapperContent}>
         <div className={styles.timePost}>
           <span>Posted {frontMatter.date}</span>
           <span>4 min read</span>
         </div>
         <div className={styles.author}>
-          <Image src={avatar} className={styles.avatar} />
+          <Image src={avatar} className={styles.avatar} alt="ss" />
           <span>By {frontMatter.author}</span>
         </div>
         <span className={styles.desciption}>{frontMatter.description}</span>
-        <p className={styles.content}>
-          <MDXRemote {...source} />
-        </p>
+        <MDXRemote {...source} className={styles.content} />
       </div>
       <div className={styles.otherArticles}>
         <div className={styles.type}>
@@ -39,16 +33,13 @@ export default function PostPage({ posts, frontMatter, source }) {
         </div>
         <ul>
           {posts.slice(0, 3).map((post) => (
-            <li className={styles.listPost}>
+            <li key={post.filePath} className={styles.listPost}>
               <Link
                 as={`/posts/${post.filePath.replace(/\.md?$/, "")}`}
                 href={`/posts/[slug]`}
                 className={styles.link}
               >
-                <img
-                  src="https://anhdep123.com/wp-content/uploads/2021/01/hinh-nen-thien-nhien-4k.jpg"
-                  alt="ss"
-                />
+                <img src={post.data.image} alt="ss" />
                 <span className={styles.title}>{post.data.title}</span>
                 <span className={styles.date}>{post.data.date}</span>
               </Link>

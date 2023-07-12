@@ -98,6 +98,7 @@
 .listPost .link{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     width: 317px;
     height: 485px;
     border: 1px solid #C7C9D1;
@@ -113,11 +114,13 @@
 .recentPost .title{
     font-weight: 400;
     font-size: 32px;
-    padding: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 .listPost .date{
     margin-left: 16px;
+    margin-bottom: 10px;
 }
 
 

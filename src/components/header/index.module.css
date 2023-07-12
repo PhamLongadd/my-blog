@@ -24,7 +24,6 @@
 .search {
     display: flex;
     gap: 10px;
-    width: auto;
     height: 32px;
     background-color: #fff;
     border-radius: 92px;
@@ -51,3 +50,4 @@
     border: none;
     cursor: pointer;
 }
+

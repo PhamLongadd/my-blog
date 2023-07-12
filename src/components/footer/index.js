@@ -10,15 +10,13 @@ export default function Footer() {
       <div className={styles.right}>
         <div className={styles.information}>
           <span>CATEGORIES</span>
-          <Link href="/">Entrepreneurship</Link>
-          <Link href="/">Creator</Link>
-          <Link href="/">Tech</Link>
           <Link href="/allBlogs">All</Link>
         </div>
         <div className={styles.information}>
           <span>PAGES</span>
           <Link href="/">Home</Link>
-          <Link href="/">About</Link>
+          <Link href="/about">About</Link>
+          <Link href="/contact">Contact</Link>
         </div>
         <div className={styles.information}>
           <span>CONTACT</span>

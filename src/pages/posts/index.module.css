@@ -18,6 +18,7 @@
     height: 662px;
     border-radius: 10px;
     margin-bottom: 55px;
+    object-fit: cover;
 }
 
 .wrapperContent{
@@ -100,6 +101,7 @@
 .otherArticles .listPost .link{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     width: 317px;
     height: 485px;
     border: 1px solid #C7C9D1;
@@ -115,9 +117,11 @@
 .otherArticles .listPost .title{
     font-weight: 400;
     font-size: 32px;
-    padding: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 .otherArticles .listPost .date{
     margin-left: 16px;
+    margin-bottom: 10px;
 }
